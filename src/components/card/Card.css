@@ -1,0 +1,50 @@
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding-left: 11rem;
+  justify-content: start;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.inner-card-container {
+  display: flex;
+  align-items: center;
+}
+
+.inner-card-container > span {
+  padding: 0 0.2rem;
+}
+
+.card-star {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card-image {
+  width: 10rem;
+  height: 15rem;
+}
+
+.price-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.price {
+  padding-right: 4px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
