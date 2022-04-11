@@ -1,13 +1,16 @@
 .card-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+  padding: auto;
+  margin-top: 2rem;
+  padding: 0 5rem;
+  justify-items: center;
 }
 
 .card-container {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  padding-left: 11rem;
   justify-content: start;
   align-items: flex-start;
   font-size: 0.9rem;
@@ -28,8 +31,8 @@
 }
 
 .card-image {
-  width: 10rem;
-  height: 15rem;
+  width: 15rem;
+  height: 20rem;
 }
 
 .price-text {
