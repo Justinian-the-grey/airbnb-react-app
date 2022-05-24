@@ -1,17 +1,20 @@
 import React from 'react';
 import './Card.css';
 import star from '../../assets/images/star.png';
-// import data from '../../data';
 
 function Card(props) {
-  // const { coverImg, stats, location, title, price } = props.data;
   const cards = props.data;
 
   return (
     <section className="card-section">
       {cards.map((card) => {
+        let badge = (card.openSpots === 0 && card.location === "Online") ? "SOLD OUT" : "ONLINE"
+
+        if(card.location !== "Online" && card.openSpots !== 0) badge = undefined
+        
         return (
           <div key={card.id} className="card-container">
+            {badge && <div className="card-badge">{badge}</div>}
             <img
               className="card-image"
               src={card.coverImg}
